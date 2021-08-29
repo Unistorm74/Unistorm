@@ -1,0 +1,16 @@
+//to test the results by calling the following URLs respectively
+
+// test: using this url will see the latest data on message.json
+GET http://localhost:3000/message?role=admin
+
+//test: using this url will see the Body message from login router
+GET http://localhost:3000/message?role=user
+
+//test: using this url will update the /data/message.json for latest calling
+POST http://localhost:3000/message
+Content-Type: application/json
+
+{
+    "name":"secret",
+    "role":"Admin"
+}
